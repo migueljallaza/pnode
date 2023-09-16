@@ -16,6 +16,8 @@ http://localhost:3001/api/login
 
 http://localhost:3001/api/profile
 
+API USUARIOS
+
 POST
 http://localhost:3001/api/usuarios
 
@@ -24,3 +26,33 @@ http://localhost:3001/api/usuarios
     "correo" : "diego.perez@txt.com",
     "contrasena" : "diego123"
 }
+GET
+http://localhost:3001/api/usuarios
+PUT
+http://localhost:3001/api/usuarios/2
+
+API CATEGORIAS
+GET
+http://localhost:3001/api/categorias
+POST
+http://localhost:3001/api/categorias
+{
+    "nombre" : "cat100",
+    "usuarioId" : 1
+}
+PUT
+http://localhost:3001/api/categorias/1
+
+API PRODUCTOS
+GET
+http://localhost:3001/api/productos
+POST
+http://localhost:3001/api/productos
+{
+    "nombre" : "p100",
+    "precio_unitario" : 10,
+    "categoriaId" : 1,
+    "usuarioId" : 2
+}
+PUT
+http://localhost:3001/api/productos/1
