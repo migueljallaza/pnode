@@ -1,6 +1,16 @@
 # proyecto-final-nodejs-mfjc
 
-el proyecto no necesita cambiar las variables de la base de datos, esta configurado sobre un hosting free de postgres
+Las variables de la base de datos, esta configurado sobre un hosting free de postgres
+
+PASO 1:
+clonar el proyecto
+PASO 2:
+Ingresar a la carpeta clonada
+PASO 3:
+en la terminal digitar: npm install
+PASO 4:
+validar las API solicitados
+
 
 http://localhost:3001/api/login
 
