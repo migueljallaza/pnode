@@ -56,7 +56,7 @@ export async function getProductos(req, res) {
   }
 
 
-  export async function getProjectsTasks(req, res) {
+  export async function getProductosPorUsuario(req, res) {
     const { id } = req.params;
     try {
       const projects = await Producto.findAll({

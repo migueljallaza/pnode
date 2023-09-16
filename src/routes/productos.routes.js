@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import {  } from '../controllers/categoria.controller.js';
-import { createProductos, getProductos, getProjectsTasks, updateProductos } from '../controllers/producto.controller.js';
+import { createProductos, getProductos, getProductosPorUsuario, updateProductos } from '../controllers/producto.controller.js';
 
 const router = Router();
 
@@ -11,6 +11,6 @@ router.post('/', createProductos);
 
 router.put('/:id', updateProductos);
 
-router.get('/usuario/:id', getProjectsTasks);
+router.get('/usuario/:id', getProductosPorUsuario);
 
 export default router;
