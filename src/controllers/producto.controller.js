@@ -56,6 +56,24 @@ export async function getProductos(req, res) {
   }
 
 
+  export async function deleteProductos(req, res) {
+    const { id } = req.params;
+    try {
+      // await Task.destroy({
+      //   where: { projectId: id },
+      // });
+      await Producto.destroy({
+        where: { id },
+      });
+      return res.sendStatus(204);
+    } catch (error) {
+      res.status(500).json({
+        message: error.message,
+      });
+    }
+  }
+
+
   export async function getProductosPorUsuario(req, res) {
     const { id } = req.params;
     try {

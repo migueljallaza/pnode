@@ -1,4 +1,5 @@
 import { Categoria } from '../models/Categoria.js';
+import { Usuario } from '../models/Usuario.js';
 
 export async function getCategorias(req, res) {
     try {
@@ -44,6 +45,23 @@ export async function getCategorias(req, res) {
       await categorias.save();
   
       return res.json(categorias);
+    } catch (error) {
+      res.status(500).json({
+        message: error.message,
+      });
+    }
+  }
+
+  export async function deleteCategoria(req, res) {
+    const { id } = req.params;
+    try {
+      // await Usuario.destroy({
+      //   where: { usuarioId: id },
+      // });
+      await Categoria.destroy({
+        where: { id },
+      });
+      return res.sendStatus(204);
     } catch (error) {
       res.status(500).json({
         message: error.message,
