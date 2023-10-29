@@ -1,11 +1,11 @@
 import { Sequelize } from 'sequelize';
 
 export const sequelize = new Sequelize(
-  'benoerjb', // db name
-  'benoerjb', // username
-  'CWR6iUkB0Uayj69VkQIeaRMygDprSrOJ', // password
+  'railway', // db name
+  'postgres', // username
+  '5GCg6Ec5bGf3**bb6dG5DafCF5cG-CG6', // password
   {
-    host: 'hansken.db.elephantsql.com',
+    host: 'viaduct.proxy.rlwy.net',
     dialect: 'postgres',
   }
 );
